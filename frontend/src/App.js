@@ -4,7 +4,7 @@ import './App.css';
 import Cart from './components/Cart';
 import Checkout from './components/Checkout';
 
-const API_URL = 'http://localhost:5000/api';
+const API_URL = process.env.REACT_APP_API_URL || 'http://localhost:5000/api';
 
 // 3D tilt hook for product cards
 function useTilt(ref) {
